@@ -13,6 +13,7 @@
 		747B480C23BBFD0300650259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747B480A23BBFD0300650259 /* Main.storyboard */; };
 		747B480E23BBFD0300650259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747B480D23BBFD0300650259 /* Assets.xcassets */; };
 		747B481123BBFD0300650259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747B480F23BBFD0300650259 /* LaunchScreen.storyboard */; };
+		747B481923BBFE8000650259 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B481823BBFE8000650259 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		747B480D23BBFD0300650259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		747B481023BBFD0300650259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		747B481223BBFD0300650259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747B481823BBFE8000650259 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				747B480423BBFD0300650259 /* AppDelegate.swift */,
 				747B480623BBFD0300650259 /* SceneDelegate.swift */,
 				747B480823BBFD0300650259 /* ViewController.swift */,
+				747B481823BBFE8000650259 /* Story.swift */,
 				747B480A23BBFD0300650259 /* Main.storyboard */,
 				747B480D23BBFD0300650259 /* Assets.xcassets */,
 				747B480F23BBFD0300650259 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				747B480923BBFD0300650259 /* ViewController.swift in Sources */,
 				747B480523BBFD0300650259 /* AppDelegate.swift in Sources */,
 				747B480723BBFD0300650259 /* SceneDelegate.swift in Sources */,
+				747B481923BBFE8000650259 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
