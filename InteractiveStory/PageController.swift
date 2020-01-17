@@ -12,6 +12,14 @@ class PageController: UIViewController {
     
     var page: Page?
     
+    // MARK: – User Interface Properties
+    
+    let artworkView = UIImageView()
+    let storyLabel = UILabel()
+    let firstChoiceButton = UIButton(type: .system)
+    let secondChoiceButton = UIButton(type: .system)
+    
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -24,10 +32,11 @@ class PageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        // view.backgroundColor = .blue
         
         if let page = page {
-            print(page.story.text)
+            // print(page.story.text)
+            artworkView.image = page.story.artwork
         }
 
         // Do any additional setup after loading the view.
@@ -43,5 +52,20 @@ class PageController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        view.addSubview(artworkView)
+        artworkView.translatesAutoresizingMaskIntoConstraints = false
+        // turns off automatic application of constraints so that you can set them explicitly. Interface Builder typically handles this for you but we are creating views programmatically
+    
+        NSLayoutConstraint.activate([
+            artworkView.topAnchor.constraint(equalTo: view.topAnchor),
+            artworkView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            artworkView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            artworkView.leftAnchor.constraint(equalTo: view.leftAnchor)
+        ])
+    }
 
 }
