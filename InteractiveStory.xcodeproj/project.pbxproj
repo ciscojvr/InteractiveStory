@@ -15,6 +15,7 @@
 		747B481123BBFD0300650259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747B480F23BBFD0300650259 /* LaunchScreen.storyboard */; };
 		747B481923BBFE8000650259 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B481823BBFE8000650259 /* Story.swift */; };
 		747B481B23BC01D000650259 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B481A23BC01D000650259 /* Page.swift */; };
+		D7A9819323D0DAC80049D054 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A9819223D0DAC80049D054 /* PageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		747B481223BBFD0300650259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747B481823BBFE8000650259 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		747B481A23BC01D000650259 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		D7A9819223D0DAC80049D054 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				747B480823BBFD0300650259 /* ViewController.swift */,
 				747B481823BBFE8000650259 /* Story.swift */,
 				747B481A23BC01D000650259 /* Page.swift */,
+				D7A9819223D0DAC80049D054 /* PageController.swift */,
 				747B480A23BBFD0300650259 /* Main.storyboard */,
 				747B480D23BBFD0300650259 /* Assets.xcassets */,
 				747B480F23BBFD0300650259 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				747B480923BBFD0300650259 /* ViewController.swift in Sources */,
 				747B480523BBFD0300650259 /* AppDelegate.swift in Sources */,
+				D7A9819323D0DAC80049D054 /* PageController.swift in Sources */,
 				747B480723BBFD0300650259 /* SceneDelegate.swift in Sources */,
 				747B481923BBFE8000650259 /* Story.swift in Sources */,
 				747B481B23BC01D000650259 /* Page.swift in Sources */,
