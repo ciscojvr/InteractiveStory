@@ -20,13 +20,13 @@ class PageController: UIViewController {
     let secondChoiceButton = UIButton(type: .system)
     
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) { // this is a designated initializer required for every subclass of UIViewController
         super.init(coder: aDecoder)
     }
     
-    init(page: Page) {
+    init(page: Page) { // our custom initializer so we can create our instances
         self.page = page
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: nil) // since we're treating our init method here as our subclasses designated initializer we need to call this desginated initializer on UIViewController to initialize up the chain
     }
 
     override func viewDidLoad() {
