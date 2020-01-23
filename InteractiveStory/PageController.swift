@@ -37,6 +37,7 @@ class PageController: UIViewController {
         if let page = page {
             // print(page.story.text)
             artworkView.image = page.story.artwork
+            storyLabel.text = page.story.text
         }
 
         // Do any additional setup after loading the view.
@@ -65,6 +66,16 @@ class PageController: UIViewController {
             artworkView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             artworkView.rightAnchor.constraint(equalTo: view.rightAnchor),
             artworkView.leftAnchor.constraint(equalTo: view.leftAnchor)
+        ])
+        
+        view.addSubview(storyLabel)
+        storyLabel.numberOfLines = 0 // this allows the system to determine how many lines it needs to display to show all the text.
+        storyLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            storyLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16.0),
+            storyLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16.0),
+            storyLabel.topAnchor.constraint(equalTo: view.centerYAnchor, constant: -48.0)
         ])
     }
 
