@@ -43,16 +43,18 @@ class PageController: UIViewController {
     
     // MARK: – User Interface Properties
     
-    let artworkView: UIImageView = {
+    lazy var artworkView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = self.page?.story.artwork //unwrapping here is okay because the image property on UIImageView accepts an optional instance of UIImage, so if self.page.story.artwork does not contain an artwork and the resulting value is nil, it will still compile because we can assign nil to this value.
         return imageView
     }()
     
-    let storyLabel: UILabel = {
+    lazy var storyLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
+        label.attributedText = self.page?.story(attributed: true )
         
         return label
     }()
@@ -88,9 +90,6 @@ class PageController: UIViewController {
         
         if let page = page {
             // print(page.story.text)
-            artworkView.image = page.story.artwork
-            
-            storyLabel.attributedText = page.story(attributed: true )
             
             if let firstChoice = page.firstChoice {
                 firstChoiceButton.setTitle(firstChoice.title, for: .normal)
