@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // registering ViewController as an observer for the UIKeyboardWillShow notification
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     
@@ -32,10 +35,26 @@ class ViewController: UIViewController {
                         pageController.page = Adventure.story(withName: name)
                     }
                 }
-            } catch let error {
+            } catch AdventureError.nameNotProvided {
+                let alertController = UIAlertController(title: "Name Not Provided", message: "Provide a name to start the story.", preferredStyle: .alert)
                 
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                
+                alertController.addAction(action)
+                
+                present(alertController, animated: true, completion: nil)
+            } catch let error {
+                fatalError("\(error.localizedDescription)")
             }
         }
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        print("Keyboard Will Show!")
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
 
