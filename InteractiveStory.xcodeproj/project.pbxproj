@@ -15,6 +15,10 @@
 		747B481123BBFD0300650259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747B480F23BBFD0300650259 /* LaunchScreen.storyboard */; };
 		747B481923BBFE8000650259 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B481823BBFE8000650259 /* Story.swift */; };
 		747B481B23BC01D000650259 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747B481A23BC01D000650259 /* Page.swift */; };
+		74A2A5DE23E74679000C8147 /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74A2A5DB23E74679000C8147 /* PageTurn.wav */; };
+		74A2A5DF23E74679000C8147 /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74A2A5DC23E74679000C8147 /* Ominous.wav */; };
+		74A2A5E023E74679000C8147 /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74A2A5DD23E74679000C8147 /* HappyEnding.wav */; };
+		74A2A5E223E747BC000C8147 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2A5E123E747BC000C8147 /* Audio.swift */; };
 		D7A9819323D0DAC80049D054 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A9819223D0DAC80049D054 /* PageController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		747B481223BBFD0300650259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747B481823BBFE8000650259 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		747B481A23BC01D000650259 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		74A2A5DB23E74679000C8147 /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PageTurn.wav; sourceTree = "<group>"; };
+		74A2A5DC23E74679000C8147 /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ominous.wav; sourceTree = "<group>"; };
+		74A2A5DD23E74679000C8147 /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HappyEnding.wav; sourceTree = "<group>"; };
+		74A2A5E123E747BC000C8147 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		D7A9819223D0DAC80049D054 /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,11 +77,23 @@
 				747B481A23BC01D000650259 /* Page.swift */,
 				D7A9819223D0DAC80049D054 /* PageController.swift */,
 				747B480A23BBFD0300650259 /* Main.storyboard */,
+				74A2A5DA23E74640000C8147 /* Resources */,
+				74A2A5E123E747BC000C8147 /* Audio.swift */,
 				747B480D23BBFD0300650259 /* Assets.xcassets */,
 				747B480F23BBFD0300650259 /* LaunchScreen.storyboard */,
 				747B481223BBFD0300650259 /* Info.plist */,
 			);
 			path = InteractiveStory;
+			sourceTree = "<group>";
+		};
+		74A2A5DA23E74640000C8147 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74A2A5DD23E74679000C8147 /* HappyEnding.wav */,
+				74A2A5DC23E74679000C8147 /* Ominous.wav */,
+				74A2A5DB23E74679000C8147 /* PageTurn.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A2A5E023E74679000C8147 /* HappyEnding.wav in Resources */,
+				74A2A5DF23E74679000C8147 /* Ominous.wav in Resources */,
 				747B481123BBFD0300650259 /* LaunchScreen.storyboard in Resources */,
 				747B480E23BBFD0300650259 /* Assets.xcassets in Resources */,
+				74A2A5DE23E74679000C8147 /* PageTurn.wav in Resources */,
 				747B480C23BBFD0300650259 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +176,7 @@
 				747B480723BBFD0300650259 /* SceneDelegate.swift in Sources */,
 				747B481923BBFE8000650259 /* Story.swift in Sources */,
 				747B481B23BC01D000650259 /* Page.swift in Sources */,
+				74A2A5E223E747BC000C8147 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
