@@ -77,7 +77,7 @@
 				747B481A23BC01D000650259 /* Page.swift */,
 				D7A9819223D0DAC80049D054 /* PageController.swift */,
 				747B480A23BBFD0300650259 /* Main.storyboard */,
-				74A2A5DA23E74640000C8147 /* Resources */,
+				74A2A5E523E75201000C8147 /* Resources */,
 				74A2A5E123E747BC000C8147 /* Audio.swift */,
 				747B480D23BBFD0300650259 /* Assets.xcassets */,
 				747B480F23BBFD0300650259 /* LaunchScreen.storyboard */,
@@ -86,7 +86,7 @@
 			path = InteractiveStory;
 			sourceTree = "<group>";
 		};
-		74A2A5DA23E74640000C8147 /* Resources */ = {
+		74A2A5E523E75201000C8147 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				74A2A5DD23E74679000C8147 /* HappyEnding.wav */,

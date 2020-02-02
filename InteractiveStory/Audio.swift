@@ -12,9 +12,9 @@ import AudioToolbox
 extension Story {
     var soundEffectName: String {
         switch self {
-        case .droid, .home: return "Happy Ending"
+        case .droid, .home: return "HappyEnding"
         case .monster: return "Ominous"
-        default: return "Page Turn"
+        default: return "PageTurn"
         }
     }
     
