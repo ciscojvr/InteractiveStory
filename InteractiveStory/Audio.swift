@@ -26,5 +26,13 @@ extension Story {
 
 class SoundEffectsPlayer {
     var sound: SystemSoundID = 0
+    // this is just a type alias for UInt32 or unsigned 32 bit integer.
     
+    func playSound(for story: Story) {
+        let soundURL = story.soundEffectURL as CFURL
+        AudioServicesCreateSystemSoundID(soundURL, &sound)
+        //this is a C function (a global function in swift, not associated with any class), &sound refers to a variable to store the sound file, a pointer.
+        
+        AudioServicesPlaySystemSound(sound)
+    }
 }
